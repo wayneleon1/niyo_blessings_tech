@@ -1,30 +1,30 @@
-'use client';
+"use client";
 
-import { Facebook, Twitter, Instagram, Linkedin, Mail } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:info@niyoblessinngtech.rw', label: 'Email' },
+    { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:info@niyoBLESSINGTECH.rw", label: "Email" },
   ];
 
   const quickLinks = [
-    { name: 'About Us', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Contact', href: '#contact' },
+    { name: "About Us", href: "#about" },
+    { name: "Services", href: "#services" },
+    { name: "Contact", href: "#contact" },
   ];
 
   const services = [
-    'IT Support',
-    'Digital Training',
-    'Web Development',
-    'Photography',
-    'Equipment Supply',
+    "IT Support",
+    "Digital Training",
+    "Web Development",
+    "Photography",
+    "Equipment Supply",
   ];
 
   return (
@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">
-              NIYO BLESSINNGTECH
+              NIYO BLESSINGTECH
             </h3>
             <p className="text-slate-400 leading-relaxed mb-6">
               Empowering rural communities in Rwanda with accessible technology
@@ -89,9 +89,9 @@ export default function Footer() {
               Contact Info
             </h4>
             <ul className="space-y-3 text-slate-400">
-              <li>Shangazi Village, Rwanda</li>
-              <li>+250 XXX XXX XXX</li>
-              <li>info@niyoblessinngtech.rw</li>
+              <li>Nyamasheke District, Rwanda</li>
+              <li>+250 786 318 660</li>
+              <li>info@niyoblessingtech.rw</li>
             </ul>
           </div>
         </div>
@@ -99,11 +99,10 @@ export default function Footer() {
         <div className="border-t border-slate-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-400">
             <p>
-              © {currentYear} NIYO BLESSINNGTECH SERVICES SHANGAZI LTD. All rights reserved.
+              © {currentYear} NIYO BLESSINGTECH SERVICES SHANGAZI LTD. All
+              rights reserved.
             </p>
-            <p>
-              Registered Company in Rwanda | Building Digital Futures
-            </p>
+            <p>Registered Company in Rwanda | Building Digital Futures</p>
           </div>
         </div>
       </div>

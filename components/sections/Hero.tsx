@@ -1,16 +1,19 @@
-'use client';
+"use client";
 
-import { Button } from '@/components/ui/button';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iIzIyMiIgc3Ryb2tlLXdpZHRoPSIuNSIgb3BhY2l0eT0iLjEiLz48L2c+PC9zdmc+')] opacity-20"></div>
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950"
+    >
+      <div className="absolute inset-0 bg-[url('/images/2.jpeg')] opacity-20 bg-contain"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
@@ -21,8 +24,8 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-100">
-            NIYO BLESSINNGTECH
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-100">
+            NIYO BLESSINGTECH
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">
               SERVICES SHANGAZI
@@ -30,14 +33,15 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl sm:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
-            Your trusted partner for IT services, digital training, web development,
-            photography, and technology equipment in Shangazi Village
+            Your trusted partner for IT services, digital training, web
+            development, photography, and technology equipment in Nyamasheke
+            Ditrict
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
             <Button
               size="lg"
-              onClick={() => scrollToSection('services')}
+              onClick={() => scrollToSection("services")}
               className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-6 text-lg rounded-lg shadow-lg shadow-emerald-500/30 transition-all hover:scale-105"
             >
               Explore Our Services
@@ -46,8 +50,8 @@ export default function Hero() {
             <Button
               size="lg"
               variant="outline"
-              onClick={() => scrollToSection('contact')}
-              className="border-slate-600 text-white hover:bg-slate-800 px-8 py-6 text-lg rounded-lg transition-all hover:scale-105"
+              onClick={() => scrollToSection("contact")}
+              className="border-slate-600 text-black dark:text-white hover:bg-slate-800 px-8 py-6 text-lg rounded-lg transition-all hover:scale-105"
             >
               Get In Touch
             </Button>
@@ -59,15 +63,21 @@ export default function Hero() {
               <div className="text-sm text-slate-400">Service Divisions</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-400 mb-2">100%</div>
+              <div className="text-4xl font-bold text-emerald-400 mb-2">
+                100%
+              </div>
               <div className="text-sm text-slate-400">Client Satisfaction</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-400 mb-2">Local</div>
+              <div className="text-4xl font-bold text-emerald-400 mb-2">
+                Local
+              </div>
               <div className="text-sm text-slate-400">Community Focus</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-400 mb-2">Expert</div>
+              <div className="text-4xl font-bold text-emerald-400 mb-2">
+                Expert
+              </div>
               <div className="text-sm text-slate-400">Professional Team</div>
             </div>
           </div>

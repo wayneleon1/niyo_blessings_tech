@@ -1,21 +1,21 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Card, CardContent } from '@/components/ui/card';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Card, CardContent } from "@/components/ui/card";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 export default function Contact() {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: '',
-    message: '',
+    name: "",
+    email: "",
+    phone: "",
+    service: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -25,10 +25,10 @@ export default function Contact() {
 
     setTimeout(() => {
       toast({
-        title: 'Message Sent Successfully!',
-        description: 'We will get back to you as soon as possible.',
+        title: "Message Sent Successfully!",
+        description: "We will get back to you as soon as possible.",
       });
-      setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+      setFormData({ name: "", email: "", phone: "", service: "", message: "" });
       setIsSubmitting(false);
     }, 1000);
   };
@@ -42,31 +42,34 @@ export default function Contact() {
   const contactInfo = [
     {
       icon: MapPin,
-      title: 'Location',
-      details: 'Shangazi Village, Rwanda',
+      title: "Location",
+      details: "Nyamasheke District, Rwanda",
     },
     {
       icon: Phone,
-      title: 'Phone',
-      details: '+250 XXX XXX XXX',
+      title: "Phone",
+      details: "+250 786 318 660",
     },
     {
       icon: Mail,
-      title: 'Email',
-      details: 'info@niyoblessinngtech.rw',
+      title: "Email",
+      details: "info@niyoblessingtech.rw",
     },
   ];
 
   return (
-    <section id="contact" className="py-24 bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+    <section
+      id="contact"
+      className="py-24 bg-slate-50 dark:bg-slate-900 transition-colors duration-300"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-6">
             Get In Touch
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-300">
-            Ready to start your technology journey? Contact us today for consultations,
-            training, or any of our services
+            Ready to start your technology journey? Contact us today for
+            consultations, training, or any of our services
           </p>
         </div>
 
@@ -174,7 +177,7 @@ export default function Contact() {
                     className="w-full h-12 bg-emerald-600 hover:bg-emerald-700 text-white text-lg font-medium"
                   >
                     {isSubmitting ? (
-                      'Sending...'
+                      "Sending..."
                     ) : (
                       <>
                         Send Message
@@ -202,7 +205,9 @@ export default function Contact() {
                       <h3 className="font-semibold text-slate-900 dark:text-white mb-1">
                         {info.title}
                       </h3>
-                      <p className="text-slate-600 dark:text-slate-400">{info.details}</p>
+                      <p className="text-slate-600 dark:text-slate-400">
+                        {info.details}
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -211,9 +216,7 @@ export default function Contact() {
 
             <Card className="shadow-lg border-none bg-gradient-to-br from-emerald-600 to-teal-600">
               <CardContent className="p-6 text-white">
-                <h3 className="font-semibold text-xl mb-2">
-                  Business Hours
-                </h3>
+                <h3 className="font-semibold text-xl mb-2">Business Hours</h3>
                 <div className="space-y-2 text-emerald-50">
                   <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
                   <p>Saturday: 9:00 AM - 4:00 PM</p>

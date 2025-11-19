@@ -1,44 +1,51 @@
-'use client';
+"use client";
 
-import { MapPin, Target, Users, Zap } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
+import { MapPin, Target, Users, Zap } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function About() {
   const features = [
     {
       icon: MapPin,
-      title: 'Located in Shangazi',
-      description: 'Serving the local community and surrounding rural areas with accessible technology services',
+      title: "Located in Nyamasheke",
+      description:
+        "Serving the local community and surrounding rural areas with accessible technology services",
     },
     {
       icon: Target,
-      title: 'Our Mission',
-      description: 'To educate, equip, and empower youth and small businesses with modern technology skills',
+      title: "Our Mission",
+      description:
+        "To educate, equip, and empower youth and small businesses with modern technology skills",
     },
     {
       icon: Users,
-      title: 'Community Focused',
-      description: 'Dedicated to bridging the digital divide in rural Rwanda through accessible services',
+      title: "Community Focused",
+      description:
+        "Dedicated to bridging the digital divide in rural Rwanda through accessible services",
     },
     {
       icon: Zap,
-      title: 'Comprehensive Solutions',
-      description: 'Full spectrum of IT services from training to implementation and ongoing support',
+      title: "Comprehensive Solutions",
+      description:
+        "Full spectrum of IT services from training to implementation and ongoing support",
     },
   ];
 
   return (
-    <section id="about" className="py-24 bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+    <section
+      id="about"
+      className="py-24 bg-slate-50 dark:bg-slate-900 transition-colors duration-300"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-6">
-            About NIYO BLESSINNGTECH
+            About NIYO BLESSINGTECH
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
-            NIYO BLESSINNGTECH SERVICES SHANGAZI LTD is a registered Rwandan company
-            offering comprehensive IT-related services. We specialize in computer and mobile
-            maintenance, web development, digital training, photography, video editing, and
-            IT equipment supply.
+            NIYO BLESSINGTECH SERVICES SHANGAZI LTD is a registered Rwandan
+            company offering comprehensive IT-related services. We specialize in
+            computer and mobile maintenance, web development, digital training,
+            photography, video editing, and IT equipment supply.
           </p>
         </div>
 
@@ -68,9 +75,10 @@ export default function About() {
             Transforming Rural Communities Through Technology
           </h3>
           <p className="text-emerald-50 text-lg leading-relaxed">
-            We believe that access to technology and digital skills should not be limited by
-            geography. Our commitment is to bring world-class IT services and training to
-            Shangazi Village and beyond, creating opportunities for growth and success.
+            We believe that access to technology and digital skills should not
+            be limited by geography. Our commitment is to bring world-class IT
+            services and training to Nyamasheke District and beyond, creating
+            opportunities for growth and success.
           </p>
         </div>
       </div>
